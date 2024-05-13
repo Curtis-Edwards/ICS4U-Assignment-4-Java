@@ -11,7 +11,7 @@ public class PalindromeDepth {
     /**
      * This function calculates the palindrome depth of a number
      */
-    public static int palindromeDepth(int integer, int currentDepth) {
+    public static int palindromeDepth(long integer, int currentDepth) {
         // Reverse the integer
         String integerStr = String.valueOf(integer);
         String reversedIntegerStr = new StringBuilder(integerStr).reverse().toString();
@@ -21,7 +21,7 @@ public class PalindromeDepth {
         if (integer == reversedInteger) {
             return currentDepth;
         } else {
-            int sum = integer + reversedInteger;
+            long sum = integer + reversedInteger;
             return palindromeDepth(sum, currentDepth + 1);
         }
     }
