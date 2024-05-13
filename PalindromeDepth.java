@@ -15,7 +15,7 @@ public class PalindromeDepth {
         // Reverse the integer
         String integerStr = String.valueOf(integer);
         String reversedIntegerStr = new StringBuilder(integerStr).reverse().toString();
-        int reversedInteger = Integer.parseInt(reversedIntegerStr);
+        long reversedInteger = Integer.parseInt(reversedIntegerStr);
 
         // Check if integer is a palindrome
         if (integer == reversedInteger) {
