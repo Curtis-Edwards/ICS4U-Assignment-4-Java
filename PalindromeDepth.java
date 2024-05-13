@@ -7,6 +7,12 @@
  */
 
 public class PalindromeDepth {
+    private PalindromeDepth() {
+        // Prevent instantiation
+        // Optional: throw an exception e.g. AssertionError
+        // if this ever *is* called
+        throw new IllegalStateException("Cannot be instantiated");
+    }
     
     /**
      * This function calculates the palindrome depth of a number
